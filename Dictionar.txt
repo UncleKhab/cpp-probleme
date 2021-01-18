@@ -1,0 +1,6 @@
+Declaratie, Statement
+Tablou, Vector
+Tablou Unidimensional, Vector[]
+Tablou Bidimensional,  Array[][]
+Flux, Stream
+Sir, String
