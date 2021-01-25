@@ -1,0 +1,26 @@
+- Expresii si pseudocod
+
+- Elemente de baza ale limbajului
+    - structuri rep/lin/dec
+    - lucrul cu fisiere
+    - tipuri de date
+
+- Algoritmi Elementari
+    - Divizibilitate (cmmmc, cmmdc)
+    - Nr de divizori
+    - Descompunere Factori 
+    - Modificare Numere
+
+- Tablouri 
+    - Vectori
+    - Matrici
+    - Cautare Binara
+    - Interclasare / Interschimbare
+    - Cautare Secventiala
+
+- Subprograme
+-+ Recursivitate
+-+ Divide et Impera
+-+ Siruri de Caractere / Fara Functii Predefinite
+- Backtracking
+- Greedy

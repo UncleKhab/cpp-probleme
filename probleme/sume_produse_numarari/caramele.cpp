@@ -4,17 +4,17 @@ using namespace std;
 
 int main()
 {
-    unsigned long long c, p;
+    long long c, p, sum_p, rest_c;
     cin >> c >> p;
-    if (p % 2 == 0)
+    sum_p = p * (p + 1) / 2;
+    rest_c = c - sum_p;
+    rest_c = rest_c - rest_c / p * p;
+    if (rest_c > 0)
     {
-        unsigned long long int r, cat;
-        r = c % p;
-        cat = c / p;
-        cout << r + cat << endl;
+        cout << rest_c << endl;
     }
     else
     {
-        cout << c % p << endl;
+        cout << c << endl;
     }
 }
