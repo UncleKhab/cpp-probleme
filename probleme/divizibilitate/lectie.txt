@@ -1,0 +1,26 @@
+Divizibilitate - 
+    Un nr N este divizor al lui X 
+        daca exista P a.i N * P = X
+        Sau X % N == 0
+    X - Multiplu
+    N - Divizor
+
+Perechi de divizori
+    Daca X divide pe N a.i P*N = X;
+    X divide si P
+    ex: 
+        X = 20;
+        n = 1 , p = 20;
+        n = 2 , p = 10;
+        n = 3 <- nu este divizor
+        n = 4 , p = 5;
+    
+    Ne oprim cand n*n > x;
+
+    Daca avem N a.i N*N == X 
+        X este un patrat perfect al lui N, deci divizorul trebuie numarat o singura data
+    
+Reguli Alternative:
+    X este Patrat Perfect - Are un nr impar de divizori
+    Restul numerelor      - Au un numar par de divizori
+    Daca cel mai mic divizor al unui nr inafara de 1 este el insusi, atunci numarul este prim.
