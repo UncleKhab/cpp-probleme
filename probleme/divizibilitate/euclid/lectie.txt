@@ -24,3 +24,23 @@ Reguli Alternative:
     X este Patrat Perfect - Are un nr impar de divizori
     Restul numerelor      - Au un numar par de divizori
     Daca cel mai mic divizor al unui nr inafara de 1 este el insusi, atunci numarul este prim.
+
+
+Cel mai mare divizor comun:
+
+    +Metoda Impartirii
+        cmmdc(a,b) a>b;
+            atat timp cat a mod b != 0
+            a = b;
+            b = a mod b;
+            cand b ajunge la 0, cmmdc este a.
+    
+    +Metoda Scaderii
+        cmmdc(a,b) a>b;
+            atat timp cat a != b;
+                daca a > b atunci a = a-b
+                daca b > a atunci b = b-a
+            daca a == b atunci cmmdc(a,b) este a;
+
+Cel mai mic multiplu comun
+    cmmmc(a,b) * cmmdc(a,b) = a*b => cmmmc(a,b) = a*b / cmmdc(a,b);
