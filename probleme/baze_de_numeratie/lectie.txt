@@ -1,0 +1,54 @@
+Orice nr mai mare ca 1 poate fi considerat o baza de numeratie
+    Cifrele din baza acestui nr X sunt X-1
+        Exemplu:
+            baza 2 -> cifrele sunt 0 si 1
+            baza 3 -> cifrele sunt 0, 1 si 2
+    
+Pentru baze mai mari ca 10, se adauga litere
+        Exemplu:
+            baza 16 -> cifrele sunt 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F 
+        
+Transformare din baza 10 in baza B:
+    Se face prin impartiri repetate la B pana cand catul impartirii este egal cu 0
+    Apoi toate resturile impartirii sunt scrise invers
+        Exemplu: 
+            24 scris in baza 2
+                24 / 2 = 12 rest 0
+                12 / 2 = 6 rest 0
+                6 / 2 = 3 rest 0
+                3 / 2  = 1 rest 1
+                1 / 2 = 0 rest 1
+            Putem astfel deduce ca nr 24 scris in baza 2 este 11000
+    
+Transformarea din baza b in baza 10
+    Pentru un nr b scris in forma c(k)c(k-1)...c(1)c(0)[b] 
+    Putem folosi formula: (c(k) * b^k) + (c(k-1) * b^(k-1)) + ... + (c(1) * b) + c(0)
+        Exemplu:
+            11000[b] = (1 * 2^4) + (1 * 2^3) + (0 * 2^2) + (0 * 2^1) + (0 * 2^0)
+        
+        Algoritmul : presupunem ca citim baza b, numarul n de cifre ale nr in baza b, apoi cifrele
+            cin >> b >> n;
+            int rez = 0;
+            for(int i = 0; i < n; i++)
+            {
+                int x;
+                cin >> x;
+                rez = rez * b + x;
+            }
+            cout << rez;
+
+
+Transformarea din baza b in baza d  
+    Se foloseste baza 10 ca "baza de manevra":
+        Se da un nr x in baza b si trebuie adus in baza d
+            Se transforma nr x din baza b in baza 10
+            Apoi se transforma din baza 10 in baza d   
+
+Exceptie -> Transormare din baza 2 in baze ce sunt puterile lui 2;
+    Exemplu 2018[10]
+    2018[10] = 11111100010[2]
+        Vrem sa transformam in baza 16.
+            Grupam cifrele cate 4(16 = 2^4) si obtinem 111.1110.0010
+            111[2] = 7[16]
+            1110[2] = E[16]
+            0010[2] = 2[16]
