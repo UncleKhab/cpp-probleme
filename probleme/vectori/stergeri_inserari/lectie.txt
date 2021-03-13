@@ -1,0 +1,48 @@
+Stergrea:
+    
+    Exemplu:
+        vrem sa stergem dintr-un vector n=10, elementul de pe pozitia 4;
+        n=10 p=4;
+
+        incepem de la i=4 si mutam spre stanga fiecare element.
+        pentru i = 4; i < n; i++;
+            v[i] = v[i+1];
+        n--;
+
+Stergerea mai multor elemente:
+    Exemplu:
+        Vrem sa stergem toate elementele pare dintr-un vector n;
+
+        Parcurgem sirul si analizam elementul curent
+            daca elementul este par, aplicam algoritmul de mai sus
+                pentru i = 0; i<n;i++
+                    daca v[i] este par
+                        pentru j = i; j < n; j++
+                            v[j] = v[j+1]
+                        n--;
+                Acest algoritm nu functioneaza corect daca in sir sunt elemente consecutive cu proprietatea dorita
+
+            
+            Alternativa ar fi sa parcurgem sirul in ordine inversa
+
+            Pentru i = n-1; i>=0; i--
+                daca v[i] este par
+                    pentru j = i; i < n-1; i++)
+                    v[i] = v[i+1];
+                n--;
+
+Adaugarea unui element in vector
+    Trebuie tinut cont de la inceputul problemei de dimensiunea fizica maxima a vectorului
+    Adaugam un element la sfarsit si crestem dimensiunea logica a vectorului.
+
+
+Inserarea
+    Se face aproape la fel ca si Stergerea
+    Parcurgem vectorul in ordine inversa si mutam catre dreapta toate elementele
+    Cand ajungem la indicele dorit, il inseram si oprim executia
+
+Inserarea mai multor elemente in sir
+    Parcurgem sirul in ordine inversa
+    procedam ca la stergerea mai multor elemente.
+
+
