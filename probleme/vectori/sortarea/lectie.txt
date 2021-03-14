@@ -1,0 +1,12 @@
+Bubble Sort -
+    - avem un vector x cu n elemente
+    - parcurgem vectorul si pentru oricare element invecinate care nu sunt in ordinea dorita, interschimbam valorile
+    - trebuie parcurs pana nu se mai face nici o sortare
+
+    Reprezentare Algoritmului:
+        cat timp V nu este sortat:
+            - presupunem ca v este sortat
+            - parcurgem V
+                - daca exista elemente ce nu sunt in ordinea dorita
+                - schimbam propunerea initiata(ca este sortat)
+                
